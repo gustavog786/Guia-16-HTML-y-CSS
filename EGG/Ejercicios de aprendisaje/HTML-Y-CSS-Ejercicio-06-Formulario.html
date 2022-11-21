@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registar un usuario</h1>
+    <form action="" method="post">
+        <p><label for="nombre"> Nombre del usuario <br><input type="text" id="nombre"></label></p>
+        <p><label for="contrasenia"> Contraseña del usuario <br><input type="password" id="contrasenia"></label></p>
+        <p><label for="edad"> Edad del usuario <br><input type="text" id="edad"></label></p>
+        <p><label for="fechaNacimiento"> Fecha de nacimiento del usuario <br><input type="date" id="fechaNacimiento"></label></p>
+        <p><b> Sexo del usuario</b></p>
+        <!-- Para que de la opción de elegir una sóla opción, se debe poner el mismo "name" en todos los input -->
+        <input name="sexo" type="radio" value="Hombre">
+        <label>Hombre</label><br>
+        <input name="sexo" type="radio" value="Mujer">
+        <label>Mujer</label><br>
+        <input name="sexo" type="radio" value="Prefiero no decir">
+        <label>Prefiero no decir</label><br>
+        <p><label> Pais de nacimiento del usuario: <br>
+            <select  id="pais">
+                <option value="argentina">Argentina</option>
+                <option value="chile">Chile</option>
+                <option value="uruguay">Uruguay</option>
+                <option value="otro">Otro</option>
+            </select>
+        </label></p>
+        <button type="submit"> Enviar </button>
+        <button type="reset"> Borrar</button>
+        </form>
+</body>
+</html>
